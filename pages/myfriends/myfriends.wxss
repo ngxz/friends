@@ -1,0 +1,22 @@
+/* pages/myfriends/myfriends.wxss */
+/*标题  */
+.top{padding: 40rpx 0;font-size: 32rpx;text-align: center;position: relative;border-bottom: 1px solid #f1f1f1;}
+.top navigator{position: absolute;top: 40rpx;right: 40rpx;color: #478bf8;}
+/*好友列表  */
+.friendlistbox{padding: 0 20rpx;}
+/*好友列表循环  */
+.friendmsg{overflow: hidden;padding: 20rpx;background-color: #fff;border-bottom: 1px solid #f1f1f1;position: relative;}
+.msgbox{overflow: hidden;}
+/*头像名字  */
+.msg .icon{float: left;width: 120rpx;height: 120rpx;}
+
+.namebox{float: left;margin-left: 30rpx;}
+
+.name{font-size: 32rpx;}
+.age,.vip{font-size: 24rpx;display: inline-block;background-color: #478bf8;color: #fff;margin-right: 20rpx;padding: 0 6rpx;}
+/*女生  */
+.girl{background-color: #f56062;}
+/*签名绝对定位  */
+.word{position: absolute;bottom: 10rpx;left: 160rpx;font-size: 30rpx;color: #999;}
+/*地址  */
+.address{float: right;font-size: 30rpx;color: #999;}

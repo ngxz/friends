@@ -1,0 +1,66 @@
+<!--pages/message/message.wxml-->
+<!--顶部栏  -->
+<view class='top'>
+	<view class='tit'>消息</view>
+</view>
+<!--内容  -->
+<view class='messagelist'>
+	<!--循环体  -->
+	<view class='message'>
+		<!-- 头像姓名 -->
+		<view class='msg'>
+			<image class='icon' src='../../img/icon.jpg'></image>
+			<!--气泡  -->
+			<view class='bubble'>2</view>
+			<view class='namebox'>
+				<view class='name'>南广轩主</view>
+			</view>
+			<!--收到的文字  -->
+			<view class='word'>
+				<navigator url='../chatpage/chatpage' hover-class='none'>南广轩主就是我，我就是袁茹兵！</navigator>
+			</view>
+		</view>
+			<!--时间  -->
+		<view class='time'>
+			2017/12/28
+		</view>
+	</view>
+	<view class='message'>
+		<!-- 头像姓名 -->
+		<view class='msg'>
+			<image class='icon' src='../../img/icon.jpg'></image>
+			<!--气泡  -->
+			<view class='bubble'>2</view>
+			<view class='namebox'>
+				<view class='name'>南广轩主</view>
+			</view>
+			<!--收到的文字  -->
+			<view class='word'>
+				<navigator url='../chatpage/chatpage' hover-class='none'>南广轩主就是我，我就是袁茹兵！</navigator>
+			</view>
+		</view>
+			<!--时间  -->
+		<view class='time'>
+			2017/12/28
+		</view>
+	</view>
+	<view class='message'>
+		<!-- 头像姓名 -->
+		<view class='msg'>
+			<image class='icon' src='../../img/icon.jpg'></image>
+			<!--气泡，未读消息数目  -->
+			<view class='bubble'>2</view>
+			<view class='namebox'>
+				<view class='name'>南广轩主</view>
+			</view>
+			<!--收到的文字  -->
+			<view class='word'>
+				<navigator url='../chatpage/chatpage' hover-class='none'>南广轩主就是我，我就是袁茹兵！</navigator>
+			</view>
+		</view>
+			<!--时间  -->
+		<view class='time'>
+			2017/12/28
+		</view>
+	</view>
+</view>

@@ -1,0 +1,11 @@
+/* pages/myfriends/addfriend/addfriend.wxss */
+/*标题  */
+.top{padding: 40rpx 0;font-size: 32rpx;text-align: center;position: relative;border-bottom: 1px solid #f1f1f1;}
+.top .bindsearch{position: absolute;top: 40rpx;right: 40rpx;color: #478bf8;}
+/*条件列表  */
+.section{padding: 20rpx;margin: 10rpx 0;border-bottom: 1px solid #f1f1f1;}
+.section image{width: 30rpx;height: 30rpx;}
+picker{overflow: hidden;}
+.section__title{float: left;font-size: 32rpx;color: #999;}
+.picker{float: right;font-size: 32rpx;color: #666;}
+

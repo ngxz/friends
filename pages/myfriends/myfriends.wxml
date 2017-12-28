@@ -1,0 +1,62 @@
+<!--pages/myfriends/myfriends.wxml-->
+<!--顶部栏  -->
+<view class='top'>
+	<view class='tit'>我的好友</view>
+	<navigator url='../myfriends/addfriend/addfriend'>筛选条件</navigator>
+</view>
+<!--好友列表  -->
+<view class='friendlistbox'>
+	<!--朋友列表循环体  -->
+	<view class='friendmsg'>
+		<!-- 头像姓名 -->
+		<view class='msg'>
+			<image class='icon' src='../../img/icon.jpg'></image>
+			
+			<view class='namebox'>
+				<view class='name'>南广轩主</view>
+				<view class='age'>♂24</view>
+				<view class='vip'>VIP</view>
+			</view>
+			<view class='word'>无论身在何处，吾心始终如一！</view>
+		</view>
+			<!--地址  -->
+		<view class='address'>
+			重庆市 渝中区
+		</view>
+	</view>
+
+	<view class='friendmsg'>
+		<!-- 头像姓名 -->
+		<view class='msg'>
+			<image class='icon' src='../../img/icon.jpg'></image>
+			
+			<view class='namebox'>
+				<view class='name'>南广轩主</view>
+				<view class='age girl'>♀24</view>
+				<view class='vip'>VIP</view>
+			</view>
+			<view class='word'>无论身在何处，吾心始终如一！</view>
+		</view>
+			<!--地址  -->
+		<view class='address'>
+			重庆市 渝中区
+		</view>
+	</view>
+	<view class='friendmsg'>
+		<!-- 头像姓名 -->
+		<view class='msg'>
+			<image class='icon' src='../../img/icon.jpg'></image>
+			
+			<view class='namebox'>
+				<view class='name'>南广轩主</view>
+				<view class='age girl'>♀24</view>
+				<!-- <view class='vip'>VIP</view> -->
+			</view>
+			<view class='word'>无论身在何处，吾心始终如一！</view>
+		</view>
+			<!--地址  -->
+		<view class='address'>
+			重庆市 渝中区
+		</view>
+	</view>
+</view>

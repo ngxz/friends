@@ -1,0 +1,48 @@
+<!--pages/chatpage/chatpage.wxml-->
+<!--顶部栏  -->
+<view class='top'>
+	<view class='tit'>南广轩主</view>
+</view>
+<!--聊天内容  -->
+<view class='chatcontent'>
+	<view class='receivetime'>昨天 14:30</view>
+	<!--聊天内容  -->
+	<!--收到  -->
+	<view class='receive'>
+		<image src='../../img/icon.jpg'></image>
+		<view class='receivemsg'>很高兴见到你！</view>
+	</view>
+	<view class='receivetime'>17:30</view>
+	<!--发出  -->
+	<view class='send'>
+		<image src='../../img/icon.jpg'></image>
+		<view class='sendmsg'>周末有空吗，出来一起玩啊！</view>
+	</view>
+	<view class='receive'>
+		<image src='../../img/icon.jpg'></image>
+		<view class='receivemsg'>请你吃麻辣烫！</view>
+	</view>
+	<view class='send'>
+		<image src='../../img/icon.jpg'></image>
+		<view class='sendmsg'>套路！</view>
+	</view>
+	<view class='receive'>
+		<image src='../../img/icon.jpg'></image>
+		<view class='receivemsg'>...</view>
+	</view>
+	<view class='send'>
+		<image src='../../img/icon.jpg'></image>
+		<view class='sendmsg'>人应当谦虚地看待自然和风景。为此固然有必要出门旅行，同大自然直接接触，或深入异乡，领略一下当地人们的生活情趣。然而，就是我们住地周围，哪怕是庭院的一木一叶，只要用心观察，有时也能深刻地领略到生命的涵义。</view>
+	</view>
+</view>
+<!--输入框  -->
+<view class='inputmsg'>
+	<image class='mac' src='../../img/mac_g.png'></image>
+	<textarea class='inputbox' bindfocus='inputtext' bindblur='gettext' bindinput='bindtext' value='{{text}}'></textarea>
+	<view wx:if='{{sendBtn}}'>
+		<button class='sendbtn' bindtap='sendbtn'>发送</button>
+	</view>
+	<view wx:else>
+		<image class='face' src='../../img/face_g.png'></image>
+	</view>
+</view>

@@ -1,0 +1,45 @@
+<!--pages/myfriends/addfriend/addfriend.wxml-->
+<!--顶部栏  -->
+<view class='top'>
+	<view class='tit'>筛选条件</view>
+	<view><image></image></view>
+	<view class='bindsearch' bindtap='bindsearch'>确认</view>
+</view>
+<!--条件  -->
+<view class="section">
+  <picker bindchange="genderchange" value="{{index}}" range="{{gender}}">
+	<view class="section__title">性别</view>
+    <view wx:if="{{index}}" class="picker">
+      {{gender[index]}}
+	  <image src='../../../img/row_r.png'></image>
+    </view>
+	<view wx:else class="picker">
+      不限
+	  <image src='../../../img/row_r.png'></image>
+    </view>
+  </picker>
+</view>
+<!--年龄  -->
+<view class="section">
+  <view class="section__title">年龄</view>
+  <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+    <view wx:if="{{multiIndex[0]}}" class="picker">
+      {{multiArray[0][multiIndex[0]]}}-{{multiArray[1][multiIndex[1]]}}岁
+	  <image src='../../../img/row_r.png'></image>
+    </view>
+	<view wx:else class="picker">
+		不限
+		<image src='../../../img/row_r.png'></image>
+	</view>
+  </picker>
+</view>
+<!--地区  -->
+<view class="section">
+  <view class="section__title">地区</view>
+  <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+    <view wx:if="{{region}}" class="picker">
+      {{region[0]}} {{region[1]}} {{region[2]}}
+	  <image src='../../../img/row_r.png'></image>
+    </view>
+  </picker>
+</view>

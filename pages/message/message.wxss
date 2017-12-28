@@ -1,0 +1,14 @@
+/* pages/message/message.wxss */
+.top{padding: 40rpx 0;font-size: 32rpx;text-align: center;position: relative;border-bottom: 1px solid #f1f1f1;}
+/*循环体  */
+.message{overflow: hidden;padding: 20rpx 30rpx;background-color: #fff;border-bottom: 1px solid #f1f1f1;position: relative;}
+/*头像名字  */
+.msg .icon{float: left;width: 120rpx;height: 120rpx;}
+.namebox{float: left;margin-left: 30rpx;}
+.name{font-size: 32rpx;}
+/*地址  */
+.time{float: right;font-size: 30rpx;color: #999;}
+/*对话的文字  */
+.word{position: absolute;bottom: 30rpx;left: 160rpx;font-size: 30rpx;color: #999;}
+/*气泡，未读消息条数  */
+.bubble{position: absolute;left: 130rpx;top: 14rpx;background-color: red;height: 34rpx;width: 34rpx;border-radius: 17rpx;font-size: 23rpx;text-align: center;color: #fff;}

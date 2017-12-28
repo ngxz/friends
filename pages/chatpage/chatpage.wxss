@@ -1,0 +1,55 @@
+/* pages/chatpage/chatpage.wxss */
+.top{padding: 40rpx 0;font-size: 32rpx;text-align: center;position: relative;border-bottom: 1px solid #f1f1f1;}
+/*聊天内容组体  */
+.chatcontent{padding: 0 30rpx;}
+.receive,.send{margin: 40rpx 0;font-size: 32rpx;}
+/*收到，发出消息  */
+.receivetime{text-align: center;font-size: 28rpx;color: #bababa;margin: 20rpx;}
+/*收到消息的样式  */
+.receive{overflow: hidden;}
+.receive image{float: left;width: 100rpx;height: 100rpx;border-radius: 10rpx;}
+
+.receivemsg{float: left;margin-left: 40rpx;padding: 30rpx 20rpx;background-color: #f2f2f2;display: inline-block;position: relative;border-radius: 20rpx;}
+
+/*发出消息的样式  */
+.send{overflow: hidden;}
+.send image{float:right;width: 100rpx;height: 100rpx;border-radius: 10rpx;}
+.sendmsg{float: right;margin-right: 40rpx;padding: 30rpx 20rpx;background-color: #088cb7;color: #fff;display: inline-block;position: relative;border-radius: 20rpx;max-width: 65%;}
+
+/*收到聊天文字背景  */
+.receivemsg:before{
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 0;
+	right: 100%;
+	top: 30%;
+	border-top:20rpx solid transparent;
+	border-left:20rpx solid transparent;
+	border-right:20rpx solid #f2f2f2;
+	border-bottom:20rpx solid transparent;
+}
+/*发出聊天文字背景  */
+.sendmsg:after{
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 0;
+	left: 100%;
+	top: 30%;
+	border-top:20rpx solid transparent;
+	border-left:20rpx solid #088cb7;
+	border-right:20rpx solid transparent;
+	border-bottom:20rpx solid transparent;
+}
+/*底部输入框  */
+.inputmsg{width: 100%;background-color:#eeebeb;padding: 20rpx 0;overflow: hidden;display: flex;}
+
+/*图标  */
+.inputmsg image{width: 50rpx;height: 50rpx;padding: 0 20rpx;margin: 10rpx 0;}
+.mac{float: left;}
+.face{float: right;}
+/*输入  */
+.inputbox{height: 70rpx;width: 76%;display: inline-block;background-color: #fff;margin: 0 auto;border: 1px solid #f1f1f1;border-radius: 20rpx;line-height: 70rpx;}
+/*发送按钮  */
+.sendbtn{height: 70rpx;width: 90rpx;font-size: 28rpx;padding: 0rpx 10rpx;}
